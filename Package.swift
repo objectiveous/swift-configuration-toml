@@ -30,8 +30,7 @@ let package = Package(
     traits: traits,
     dependencies: [
         .package(
-            url: "https://github.com/apple/swift-configuration.git",
-            from: "1.0.0",
+            path: "../swift-configuration",
             traits: [
                 .defaults,
                 .trait(name: "Reloading", condition: .when(traits: ["Reloading"])),
